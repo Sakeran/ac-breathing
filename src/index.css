@@ -14,3 +14,13 @@ body {
 a {
   color: white;
 }
+
+.btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+}

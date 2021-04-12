@@ -1,7 +1,7 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Options from "./components/Options";
-import Footer from "./components/Footer";
+import Header from "./layouts/Header";
+import Main from "./layouts/Main";
+import Options from "./layouts/Options";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (
