@@ -11,19 +11,31 @@ const TouchTrack = () => (
   </React.Fragment>
 );
 
+const TouchCircle = ({ x, y }) => (
+  <circle
+    cx={x}
+    cy={y}
+    r="10"
+    fill="#36642F"
+  />
+);
+
 const TouchField = () => (
   <div className="touch-field">
-    <svg
-      viewBox="0 0 100 100"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <TouchTrack />
 
-      <circle cx="20" cy="20" r="10" fill="#36642F" />
-      <circle cx="80" cy="20" r="10" fill="#36642F" />
-      <circle cx="80" cy="80" r="10" fill="#36642F" />
-      <circle cx="20" cy="80" r="10" fill="#36642F" />
+      {/* TOP LEFT */}
+      <TouchCircle x={20} y={20} />
+
+      {/* TOP RIGHT */}
+      <TouchCircle x={80} y={20} />
+
+      {/* BOTTOM RIGHT */}
+      <TouchCircle x={80} y={80} />
+
+      {/* BOTTOM LEFT */}
+      <TouchCircle x={20} y={80} />
     </svg>
   </div>
 );
