@@ -1,5 +1,4 @@
 main {
-  /* Stub */
-  min-height: 512px;
-  background-color: #131712;
+  display: flex;
+  justify-content: center;
 }
