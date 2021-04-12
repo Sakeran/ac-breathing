@@ -1,0 +1,49 @@
+header {
+  display: grid;
+  grid-template-areas: "header";
+
+  font-size: 2rem;
+
+  border-bottom: 1px solid #333;
+}
+
+header .logo {
+  grid-area: header;
+  place-self: center;
+
+  color: #555;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-transform: uppercase;
+}
+
+header .logo::before {
+  content: "";
+
+  grid-area: header;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #333;
+
+  position: relative;
+  top: 0.25rem;
+
+  transform: rotate(45deg);
+}
+
+header button {
+  grid-area: header;
+  place-self: end;
+
+  background: none;
+  color: white;
+
+  padding: 1rem;
+  border: none;
+
+  font-size: 3rem;
+}
