@@ -1,4 +1,7 @@
 footer {
-  /* Stub */
-  color: #333;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+  
+  font-size: 0.75rem;
+  text-align: center;
 }
