@@ -24,3 +24,21 @@ a {
   font-size: 2rem;
   padding: 0.5rem;
 }
+
+.pill {
+  padding: 0.25rem 1rem;
+  background: none;
+  
+  border: 2px solid rgb(77, 255, 77);
+  border-radius: 1rem;
+  
+  color: rgb(77, 255, 77);
+  font-family: 'BioRhyme', serif;
+  font-size: 1.5rem;
+}
+
+.pill.lesser {
+  border-color: white;
+  color: white;
+  
+}
