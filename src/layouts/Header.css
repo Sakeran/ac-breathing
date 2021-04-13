@@ -1,5 +1,5 @@
 header {
-  max-width: 900px;
+  max-width: calc(512px + 20vw);
   margin: 0 auto;
 
   display: flex;
@@ -11,7 +11,7 @@ header {
 header .logo {
   position: relative;
 
-  color: #40573a;
+  color: white;
   margin-left: 1rem;
   margin-top: 1rem;
 
@@ -26,7 +26,7 @@ header .logo::before {
   height: 1rem;
   margin: 0 auto;
 
-  background-color: #131712;
+  background-color: #555;
 
   position: relative;
   top: 7px;
@@ -42,6 +42,9 @@ header button {
   padding: 0.5rem;
   border: none;
 
+  position: relative;
+  top: 4px;
+
   font-size: 3rem;
 }
 
@@ -52,9 +55,9 @@ header button svg {
 
 header button svg:hover,
 header button svg:focus {
-  fill: #0f0;
+  fill: #4dff4d;
 }
 
 header button svg:active {
-  fill: #0a0;
+  fill: #2d942d;
 }

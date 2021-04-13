@@ -109,7 +109,7 @@ const TouchField = forwardRef((_props, ref) => {
           fontSize="7"
           x="50"
           y="52"
-          fill="#0f0"
+          fill="#4dff4d"
         >
           {msg}
         </animated.text>

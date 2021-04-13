@@ -7,6 +7,7 @@ const Header = ({ setModal }) => (
     <div className="logo">Breathing</div>
     <button
       onClick={() => setModal(true)}
+      aria-label="Toggle Modal"
       className="header-about-btn"
       id="header-about-btn"
     >

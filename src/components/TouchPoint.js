@@ -18,7 +18,7 @@ const TouchPoint = forwardRef(({ x, y }, ref) => {
           opacity: 1,
         },
         to: {
-          r: 14,
+          r: 12,
           opacity: 0,
         },
       });
@@ -27,8 +27,8 @@ const TouchPoint = forwardRef(({ x, y }, ref) => {
 
   return (
     <g>
-      <animated.circle style={props} cx={x} cy={y} r="14" fill="#6fff78" />
-      <circle cx={x} cy={y} r="10" fill="#36642F" />
+      <animated.circle style={props} cx={x} cy={y} r="12" fill="white" />
+      <circle cx={x} cy={y} r="10" fill="#4dff4d" />
     </g>
   );
 });
