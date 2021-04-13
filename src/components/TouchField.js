@@ -68,7 +68,8 @@ const TouchField = forwardRef((_props, ref) => {
 
   // Imperative API
   useImperativeHandle(ref, () => ({
-    start: cycleTracker,
+    // Obs - msg is only non-empty when playing, so it can be used as a guard.
+    start: () => msg == "" && cycleTracker(),
     reset: resetTracker,
   }));
 
