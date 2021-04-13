@@ -1,21 +1,19 @@
 header {
-  display: grid;
-  grid-template-areas: "header";
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
 
   font-size: 2rem;
-
-  border-bottom: 1px solid #333;
 }
 
 header .logo {
-  grid-area: header;
-  place-self: center;
+  position: relative;
 
-  color: #555;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #40573a;
+  margin-left: 1rem;
+  margin-top: 1rem;
 
   text-transform: uppercase;
 }
@@ -23,27 +21,40 @@ header .logo {
 header .logo::before {
   content: "";
 
-  grid-area: header;
   display: block;
   width: 1rem;
   height: 1rem;
-  background-color: #333;
+  margin: 0 auto;
+
+  background-color: #131712;
 
   position: relative;
-  top: 0.25rem;
-
+  top: 7px;
   transform: rotate(45deg);
 }
 
 header button {
-  grid-area: header;
-  place-self: end;
-
   background: none;
   color: white;
 
-  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  padding: 0.5rem;
   border: none;
 
   font-size: 3rem;
+}
+
+header button svg {
+  transition: fill 0.25s ease-in-out;
+  fill: white;
+}
+
+header button svg:hover,
+header button svg:focus {
+  fill: #0f0;
+}
+
+header button svg:active {
+  fill: #0a0;
 }
